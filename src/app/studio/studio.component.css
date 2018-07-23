@@ -1,0 +1,15 @@
+#studio-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+h2 {
+  color: white;
+}
+
+.studio-container {
+  height: 300px;
+}

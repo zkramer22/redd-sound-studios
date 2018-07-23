@@ -1,0 +1,41 @@
+<div id="contact-wrapper">
+
+  <h2>CONTACT US</h2>
+
+  <div id="contact-info">
+      <div class="contact">
+        <a href="tel:{{ phoneNumber }}">
+          <div class="icon-wrapper">
+            <i class="material-icons">phone_iphone</i>
+          </div>
+        </a>
+        <a class="contact-link" href="tel:{{ phoneNumber }}">{{ phoneNumber }}</a>
+      </div>
+
+      <div class="contact">
+        <a href="mailto:{{ emailAddress }}">
+          <div class="icon-wrapper">
+            <i class="material-icons">email</i>
+          </div>
+        </a>
+        <a class="contact-link" href="mailto:{{ emailAddress }}">{{ emailAddress }}</a>
+      </div>
+
+      <div class="contact" style="cursor: default">
+        <a>
+          <div class="icon-wrapper">
+            <i class="material-icons">home</i>
+          </div>
+        </a>
+        <a>Warrington, PA</a>
+      </div>
+
+  </div>
+
+  <br>
+
+  <agm-map [latitude]="lat" [longitude]="lng" [gestureHandling]="gest"
+            [zoom]="13" [zoomControl]="false" [styles]="mapStyles">
+    <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+  </agm-map>
+</div>

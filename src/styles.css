@@ -1,1 +1,67 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body, div, span, h1, h2, h3, h4, a, ol, ul, li, form, label, article, aside, figure, figcaption, footer, header, nav {
+ margin: 0;
+ padding: 0;
+ border: 0;
+ font-size: 100%;
+ font: inherit;
+ vertical-align: baseline;
+}
+
+* {
+  font-family: 'Oswald';
+  letter-spacing: 0.16px;
+}
+
+body {
+  min-width: 600px;
+  background-color: black;
+  color: white;
+}
+
+ul {
+ list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
+
+h1 {
+  font-size: 37px;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 22px;
+  font-weight: 200;
+}
+
+footer {
+  height: 50px;
+}
+
+@media only screen and (max-width: 750px) {
+  body {
+    overflow: scroll;
+  }
+
+  #links {
+    display: none !important;
+  }
+
+  /* #hamburger {
+    display: flex !important;
+  } */
+}
