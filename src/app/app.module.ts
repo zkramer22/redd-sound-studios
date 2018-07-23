@@ -19,7 +19,7 @@ const appRoutes: Routes = [
     AppComponent,
     StudioComponent,
     MediaComponent,
-    ContactComponent
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
