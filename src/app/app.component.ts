@@ -31,14 +31,13 @@ export class AppComponent {
 
       $hamburger.click(() => {
         $hamburgerLinks.animate({ right: '0' }, 300);
-        $hamburger.fadeOut(200);
-        $hamburgerClose.fadeIn(200);
+        $hamburgerClose.animate({ right: '5px' }, 100);
 
         $hamburgerClose.click((e) => {
-          console.log(e.target);
+          $hamburgerClose.animate({ right: '-325px' }, 100);
           $hamburgerLinks.animate({ right: '-320px' }, 300);
-          $hamburgerClose.fadeOut(200);
-          $hamburger.fadeIn(200);
+
+          $hamburgerClose.off();
         });
       });
 

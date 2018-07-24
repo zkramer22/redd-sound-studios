@@ -123,8 +123,6 @@ i {
 
 #hamburger, #hamburger-close {
   position: absolute;
-  z-index: 100;
-  right: 5px;
   top: 10px;
   width: 50px;
   height: 50px;
@@ -136,26 +134,30 @@ i {
 
 #hamburger {
   background-image: url("../assets/hamburger.png");
+  z-index: 100;
+  right: 5px;
 }
 
 #hamburger-close {
   background-image: url("../assets/hamburger-close.png");
+  filter: hue-rotate(30%);
+  z-index: 110;
+  right: -325px;
 }
 
-#hamburger, #hamburger-close {
+#hamburger {
   display: none;
 }
 
 #hamburger:hover, #hamburger-close:hover {
   cursor: pointer;
-  color: #ba090f;
 }
 
 #hamburger-links {
   position: absolute;
   right: -320px;
   top: 0;
-  z-index: 80;
+  z-index: 101;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
