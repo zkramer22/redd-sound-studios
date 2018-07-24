@@ -2,11 +2,10 @@ nav {
   position: fixed;
   z-index: 5;
   display: flex;
-  min-width: 600px;
   width: 100%;
   height: 40px;
   justify-content: space-between;
-  padding: 15px 15px;
+  padding: 15px 0 15px 0;
   background-color: rgba(0,0,0,.7);
   color: white;
 }
@@ -67,7 +66,7 @@ nav {
 #banner-photo {
   position: relative;
   z-index: 0;
-  width: 1211px;
+  min-width: 100%;
   height: 300px;
   background-image: url("../assets/studioPano-bw.jpg");
   background-size: cover;
@@ -120,4 +119,81 @@ app-studio, app-media, app-contact {
 
 i {
   font-size: 50px;
+}
+
+#hamburger, #hamburger-close {
+  position: absolute;
+  z-index: 100;
+  right: 5px;
+  top: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+  transition: all .2s linear;
+  background-size: cover;
+}
+
+#hamburger {
+  background-image: url("../assets/hamburger.png");
+}
+
+#hamburger-close {
+  background-image: url("../assets/hamburger-close.png");
+}
+
+#hamburger, #hamburger-close {
+  display: none;
+}
+
+#hamburger:hover, #hamburger-close:hover {
+  cursor: pointer;
+  color: #ba090f;
+}
+
+#hamburger-links {
+  position: absolute;
+  right: -320px;
+  top: 0;
+  z-index: 80;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ba090f;
+  height: 300px;
+  width: 200px;
+  font-size: 25px;
+}
+
+@media only screen and (max-width: 640px) {
+  nav {
+    height: 60px;
+    padding: 5px 0 5px 0;
+  }
+
+  h2 {
+    font-size: 37px;
+  }
+
+  #pro-record {
+    display: none;
+  }
+
+  #banner-photo {
+    background-position: 10%;
+    zoom: 85%;
+  }
+}
+
+@media only screen and (max-width: 785px) {
+
+  #links {
+    display: none !important;
+  }
+
+  #hamburger {
+    display: block;
+  }
+
 }
