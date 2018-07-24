@@ -25,6 +25,8 @@ export class AppComponent {
         }
       });
     });
+
+    
   }
 
   scrollToTop() {

@@ -7,9 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class ContactComponent implements OnInit {
+  phoneNumber = '215.491.1388';
+  emailAddress = 'info@reddsoundstudios.com';
+
   lat: number = 40.245077;
   lng: number = -75.122401;
-  yo: string = "yo";
   gest: string = 'cooperative';
   mapStyles: any[] = [
     {
@@ -204,13 +206,8 @@ export class ContactComponent implements OnInit {
     }
   ];
 
-  phoneNumber = '215.491.1388';
-  emailAddress = 'info@reddsoundstudios.com';
-
   constructor() { }
 
-  ngOnInit() {
-
-  }
+  ngOnInit() { }
 
 }

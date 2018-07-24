@@ -7,16 +7,19 @@ import { AppComponent } from './app.component';
 import { StudioComponent } from './studio/studio.component';
 import { MediaComponent } from './media/media.component';
 import { ContactComponent } from './contact/contact.component';
+import { HomeComponent } from './home/home.component';
 
 const appRoutes: Routes = [
+  { path: '', component: HomeComponent },
   { path: 'studio', component: StudioComponent },
   { path: 'media', component: MediaComponent },
-  { path: 'contact', component: ContactComponent }
+  { path: 'contact', component: ContactComponent },
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
+    HomeComponent,
     StudioComponent,
     MediaComponent,
     ContactComponent,
