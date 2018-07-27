@@ -14,7 +14,7 @@ export class AppComponent {
   ngOnInit() {
     $(document).ready(() => {
       const $hamburger = $('#hamburger');
-      const $hamburgerClose = $('#hamburger-close');
+      const $hamburgerClose = $('#hamburger-close, .hamburger-link');
       const $hamburgerLinks = $('#hamburger-links');
 
       $(document).scroll(() => {
@@ -29,16 +29,18 @@ export class AppComponent {
         }
       });
 
+      // Hamburger Nav Menu for small window / mobile
       $hamburger.click(() => {
         $hamburgerLinks.animate({ right: '0' }, 300);
         $hamburgerClose.animate({ right: '5px' }, 100);
 
-        $hamburgerClose.click((e) => {
+        $hamburgerClose.click(() => {
           $hamburgerClose.animate({ right: '-325px' }, 100);
           $hamburgerLinks.animate({ right: '-320px' }, 300);
 
           $hamburgerClose.off();
         });
+
       });
 
     });
